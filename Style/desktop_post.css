@@ -1,0 +1,149 @@
+@import "./tablet-mobile_post.css";
+@media (min-width: 801px) {
+  .container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: minmax(auto, 89%) minmax(11%, auto);
+    grid-template-rows: auto minmax(300px, auto) auto auto;
+    grid-template-areas:
+      "header header"
+      "content nav"
+      "content ."
+      "footer footer";
+  }
+  header {
+    grid-area: header;
+    border: 1px solid red;
+    background: dimgray;
+  }
+  header .header {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  header .header h1 {
+    flex: 3 1 100px;
+    align-self: center;
+  }
+  header .header h1 a {
+    color: blue;
+  }
+  header .header .search {
+    align-self: center;
+    flex: 2 1 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header .header .search input {
+    width: 50%;
+    height: 100%;
+  }
+  header .header .search button {
+    width: 20%;
+    height: 100%;
+    margin: 0 0 0 20px;
+  }
+  nav {
+    grid-area: nav;
+    height: 100%;
+    width: 100%;
+  }
+  nav ul {
+    /* flexbox container */
+    display: flex;
+    flex-flow: column wrap;
+    /* white-space: nowrap; */
+    justify-content: center;
+    align-content: center;
+    /* size */
+    height: 100%;
+    width: 100%;
+    /* plus */
+    list-style-position: outside;
+    margin-block: 0px;
+    padding-inline-start: 0px;
+  }
+  nav ul .li {
+    /* size */
+    width: 100%;
+    height: 28%;
+    padding: 0 10px;
+    /* flex item */
+    flex: 1 1 auto;
+    /* center text */
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: start;
+    /* white-space: nowrap; */
+    box-sizing: border-box;
+  }
+  nav ul .li li {
+    margin-left: 10px;
+    box-sizing: border-box;
+  }
+  section {
+    grid-area: content;
+    width: 100%;
+    border: 1px solid red;
+  }
+  .container_section {
+    display: grid;
+    grid-template: 1fr 6fr 1fr / 20% 78%;
+    grid-template-areas:
+      "auth head"
+      "auth content"
+      "auth social";
+  }
+  .author_info {
+    grid-area: auth;
+  }
+  .header_post {
+    font-size: 1.9em;
+  }
+  .content_post {
+    font-size: 1.5em;
+  }
+  .content_post img {
+    max-width: 40%;
+    margin: 20px;
+  }
+  .social_share {
+    display: flex;
+    justify-content: space-between;
+  }
+  .social_share button {
+    font-size: 1.3em;
+    height: 55%;
+    flex: 1 0 auto;
+  }
+  footer {
+    grid-area: footer;
+    width: 100%;
+    border: 1px solid red;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: blanchedalmond;
+  }
+  footer h3 {
+    flex: 3 1 auto;
+  }
+  .card {
+    flex: 1 1 auto;
+  }
+  #user_footer {
+    max-width: 100px;
+    height: 100px;
+    padding: 2px 16px;
+  }
+  .content_footer {
+    padding: 2px 16px;
+  }
+}
