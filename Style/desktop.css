@@ -1,5 +1,3 @@
-@import "./mobile.css";
-@import "./tablet.css";
 @media (min-width: 801px) {
   .container {
     width: 100%;
@@ -92,9 +90,10 @@
   section .content {
     display: grid;
     grid-auto-rows: auto;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 49% 49%;
     grid-template-areas: "head head";
     justify-content: center;
+    gap: 10px;
   }
   section .content .header_post {
     grid-area: head;
@@ -127,7 +126,7 @@
   .content_post {
     flex: 1 1 50%;
   }
-  .content_post a {
+  .content_post button a {
     font-size: 1.5em;
     font-weight: bold;
   }

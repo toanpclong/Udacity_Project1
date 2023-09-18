@@ -1,4 +1,3 @@
-@import "./tablet-mobile_post.css";
 @media (min-width: 801px) {
   .container {
     display: grid;

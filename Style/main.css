@@ -1,0 +1,10 @@
+@import "./mobile.css";
+@import "./desktop.css";
+@import "./tablet.css";
+.container {
+  width: 100%;
+  display: grid;
+}
+section .content {
+  display: grid;
+}

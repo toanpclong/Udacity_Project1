@@ -128,7 +128,7 @@
   .content_post {
     flex: 2 1 50%;
   }
-  .content_post a {
+  .content_post button a {
     font-size: 1.5em;
     font-weight: bold;
   }

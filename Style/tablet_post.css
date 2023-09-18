@@ -1,5 +1,4 @@
 .container {
-  display: grid;
   width: 100%;
   grid-template-columns: 100%;
   grid-template-rows: auto minmax(50px, auto) auto auto;
@@ -86,7 +85,6 @@ section {
   border: 1px solid red;
 }
 .container_section {
-  display: grid;
   grid-template: auto auto auto auto / 100%;
   grid-template-areas:
     "auth"

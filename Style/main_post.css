@@ -1,0 +1,10 @@
+@import "./tablet_post.css";
+@import "./desktop_post.css";
+@import "./mobile_post.css";
+
+.container {
+  display: grid;
+}
+.container_section {
+  display: grid;
+}
